@@ -1,0 +1,90 @@
+.news {
+    background: #fff;
+
+    &__list {
+        width: 80rem;
+        margin: 0 auto;
+        margin-bottom: 7.3rem;
+    }
+
+    &__title {
+        margin-top: 0.8rem;
+        width: 59.5rem;
+        line-height: 1.15;
+    }
+
+    &__item {
+        margin-bottom: 2rem;
+        padding-bottom: 1.3rem;
+        border-bottom: $border;
+
+        &:nth-child(3) {
+
+            .btn {
+                @include btn($main)
+            }
+
+        }
+
+        &:nth-child(4) {
+
+            .btn {
+                @include btn($red)
+            }
+
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+    }
+
+    &__link {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .date {
+        margin-right: 2rem;
+        margin-top: 0.9rem;
+    }
+
+    .label {
+        margin-right: 2rem;
+        line-height: 1;
+        max-height: 3.2rem;
+        width: 8rem;
+    }
+
+    .btn-label {
+        @include btn($color: $btn-grey);
+        padding: 0.8rem;
+        font-weight: bold;
+        border-radius: $bdr-4;
+
+    }
+
+
+    .read-more {
+        color: $red;
+        display: block;
+        width: 4rem;
+        font-weight: bold;
+        margin: 0 auto;
+        position: relative;
+        line-height: 1;
+
+        &::after {
+            @include fa('\f105');
+            color: $red;
+            right: -16px;
+            top: 50%;
+            transform: translateY(-50%);
+
+        }
+
+    }
+
+}

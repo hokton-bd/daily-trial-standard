@@ -1,0 +1,8 @@
+@mixin fa($content) {
+
+    content: $content;
+    position: absolute;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: bold;
+
+}

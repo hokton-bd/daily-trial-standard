@@ -1,7 +1,10 @@
 $main: #3F51B5;
 $red: #E81919;
-$grey: #EFEFEF;
+$bg-grey: #EFEFEF;
 $black: #333;
+$text-grey: #6F7579;
+$btn-grey: #666666;
+$border: 1px solid #707070;
 
 $layout-width-inner: 1200px;
 $breakpoints: (
@@ -11,3 +14,6 @@ $breakpoints: (
 );
 
 $font-family: '游ゴシック体', 'sans-serif';
+
+$bdr-8: 8px;
+$bdr-4: 4px;

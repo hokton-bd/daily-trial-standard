@@ -1,4 +1,24 @@
-@import 'setting/_variables.scss';
-@import 'mixin/_responsive.scss';
+//reset
 @import 'base/_reset.scss';
+
+//variables
+@import 'setting/_variables.scss';
+
+//mixin
+@import 'mixin/_responsive.scss';
+@import 'mixin/_btn.scss';
+@import 'mixin/_font-awesome.scss';
+
+//base
 @import 'base/_base.scss';
+
+//modules
+@import 'module/_global-nav.scss';
+@import 'module/_global-nav-list.scss';
+@import 'module/_top.scss';
+@import 'module/_header.scss';
+@import 'module/_section.scss';
+@import 'module/_card.scss';
+@import 'module/_card-item.scss';
+@import 'module/_news.scss';
+@import 'module/_price.scss';

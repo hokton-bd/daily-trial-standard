@@ -1,0 +1,16 @@
+.card-item {
+  background: #fff;
+  float: left;
+  width: calc(100% - 66.666666% - 4.8rem);
+  margin-right: 4.8rem;
+  padding: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.card-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.card-item:nth-child(n + 4) {
+  margin-bottom: 2rem;
+}

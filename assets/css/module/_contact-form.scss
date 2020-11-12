@@ -1,0 +1,64 @@
+.form-box {
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+
+}
+
+.form-desc {
+
+    font-weight: bold;
+    line-height: 3.8rem;
+
+}
+
+.w-520 {
+    width: 52rem;
+    padding: 1.2rem 1.6rem;
+    line-height: 1;
+    height: 3.8rem;
+    
+}
+::placeholder {
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.textarea {
+    resize: none;
+    height: 24rem;
+    line-height: 1;
+}
+
+.required {
+    position: relative;
+    &::after {
+        content: '必須';
+        display: block;
+        position: absolute;
+        background: $red;
+        color: white;
+        font-weight: bold;
+        padding: 0.4rem 0.8rem;
+        border-radius: $bdr-4;
+        font-size: 1.4rem;
+        line-height: 1;
+        bottom: -2.1rem;
+    }
+}
+
+.contact-form {
+
+    background: white;
+    padding: 6rem;
+    width: 80rem;
+    margin: 0 auto;
+
+    &__radio {
+        justify-content: flex-start;
+    }
+
+
+
+}

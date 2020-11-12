@@ -187,7 +187,7 @@
 
             <div class="content">
 
-                <div class="price__price-img img-box">
+                <div class="price__img img-box">
                     <img src="assets/images/price-img.png" alt="price">
                 </div>
 
@@ -195,27 +195,27 @@
 
                 <table class="price__table">
                     <tr>
-                        <th></th>
-                        <th>column1</th>
-                        <th>column2</th>
+                        <th class="bg-grey p-22"></th>
+                        <th class="bg-grey">column1</th>
+                        <th class="bg-grey">column2</th>
                     </tr>
                     <tr>
-                        <td>row1</td>
+                        <td class="bg-grey p-22">row1</td>
                         <td>100円</td>
                         <td>100円</td>
                     </tr>
                     <tr>
-                        <td>row2</td>
+                        <td class="bg-grey p-22">row2</td>
                         <td>6000円</td>
                         <td>0円</td>
                     </tr>
                     <tr>
-                        <td>row3</td>
+                        <td class="bg-grey p-22">row3</td>
                         <td class="text-red">6000円<span class="desc">※今だけ半額</span></td>
                         <td>0円</td>
                     </tr>
                     <tr>
-                        <td>row4</td>
+                        <td class="bg-grey p-22">row4</td>
                         <td>100円</td>
                         <td>100円</td>
                     </tr>
@@ -235,6 +235,19 @@
         
             <h2 class="section-title">access</h2>
 
+            <div class="google-maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6507.598048612115!2d138.7229860287549!3d35.36063367073394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019629a42fdc899%3A0xa6a1fcc916f3a4df!2sMount%20Fuji!5e0!3m2!1sen!2sjp!4v1604988375404!5m2!1sen!2sjp" width="800" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+            <div class="access__desc">
+                <p class="address"><span class="address__title">住所</span><span class="address__content">ほげほげほげのほげの場所</span></p>
+                <p class="how-to"><span class="how-to__title">アクセス</span><span class="how-to__content">〇〇駅から右に５分</span></p>
+            </div>
+
+            <div class="access__btn">
+                <a href="" class="access__link">Googleマップで見る</a>
+            </div>
+
         </div><!-- /.inner -->
         </section><!-- access -->
 
@@ -242,6 +255,23 @@
         <div class="inner contact__inner section__inner">
         
             <h2 class="section-title">contact</h2>
+
+            <form action="" class="contact-form">
+
+                <div class="form-box contact-form__name required"><span class="name-desc form-desc">お名前</span><input class="w-520" type="text" name="" id="" placeholder="山田太郎" required></div>
+                <div class="form-box contact-form__email required"><span class="email-desc form-desc">メールアドレス</span><input class="w-520" type="email" name="" id="" placeholder="text@email.com" required></div>
+                <div class="form-box contact-form__type"><span class="type-desc form-desc">お問い合わせ種別</span><select class="w-520" name="" id=""><option value="">- - - -</option></select></div>
+                <div class="form-box contact-form__message"><span class="message-desc form-desc">お問い合わせ内容</span><textarea class="w-520 textarea" name="" id="" cols="30" rows="10" placeholder="お問い合わせ内容を入力してください"></textarea></div>
+                <div class="form-box contact-form__radio">
+                    <label for="1" class="label"><input type="radio" name="test" id="1"><span class="radio-desc">ラジオ1</span></label>
+                    <label for="2" class="label"><input type="radio" name="test" id="2"><span class="radio-desc">ラジオ2</span></label>
+                    <label for="3" class="label"><input type="radio" name="test" id="3"><span class="radio-desc">ラジオ3</span></label>
+                </div>
+                <div class="form-box contact-form__privacy"><label for="check" class="label"><input type="checkbox" name="" id="check"><a href="" class="privacy-policy-link">プライバシーポリシー</a>に合意する</label></div>
+
+                <input type="submit" value="送信する" class="contact-form__submit btn">
+
+            </form><!-- /.contact-form -->
 
         </div><!-- /.inner -->
         </section><!-- contact -->

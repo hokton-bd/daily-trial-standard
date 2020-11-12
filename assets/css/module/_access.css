@@ -1,0 +1,36 @@
+.access .google-maps {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 31.25%;
+  position: relative;
+  margin: 0 auto;
+  width: 80rem;
+  height: 40rem;
+  margin-bottom: 1.6rem;
+}
+
+.access .google-maps iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.access__desc {
+  margin-left: 20rem;
+}
+
+.access .address {
+  margin-bottom: 1.6rem;
+}
+
+.access .address__title {
+  font-weight: bold;
+  margin-right: 7.2rem;
+}
+
+.access .how-to__title {
+  font-weight: bold;
+  margin-right: 4rem;
+}

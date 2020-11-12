@@ -285,3 +285,181 @@ p {
 .price {
   background: #EFEFEF;
 }
+
+.price .content {
+  display: flex;
+}
+
+.price__img {
+  width: 454px;
+  margin-right: 4rem;
+  height: 28.6rem;
+}
+
+.price__table {
+  border-collapse: collapse;
+  width: 704px;
+  background: white;
+  text-align: right;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+}
+
+.price th, .price td {
+  padding: 1.6rem 0rem;
+  width: 26.6rem;
+  border: 1px solid #707070;
+  padding-right: 2.5rem;
+  max-height: 5.6rem;
+}
+
+.price .bg-grey {
+  background: #707070;
+  color: white;
+  text-align: center;
+  padding-right: 0;
+}
+
+.price .p-22 {
+  width: 17rem;
+  padding-right: 0;
+}
+
+.price .desc {
+  display: block;
+  font-size: 1.3rem;
+}
+
+.price .text-red {
+  color: #E81919;
+  padding: 0 2.5rem 0 0;
+}
+
+.price .contact-link {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.access .google-maps {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 31.25%;
+  position: relative;
+  margin: 0 auto;
+  width: 80rem;
+  height: 40rem;
+  margin-bottom: 1.6rem;
+}
+
+.access .google-maps iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.access__desc {
+  margin-left: 20rem;
+  margin-bottom: 3rem;
+}
+
+.access .address {
+  margin-bottom: 1.6rem;
+}
+
+.access .address__title {
+  font-weight: bold;
+  margin-right: 7.2rem;
+}
+
+.access .how-to__title {
+  font-weight: bold;
+  margin-right: 4rem;
+}
+
+.access__btn {
+  text-align: center;
+}
+
+.access__link {
+  background: #3F51B5;
+  color: #fff;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 2rem 7.7rem;
+  font-weight: bold;
+  border-radius: 8px;
+  line-height: 1;
+  position: relative;
+}
+
+.access__link::after {
+  content: "";
+  position: absolute;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: bold;
+  right: 1.2rem;
+}
+
+.contact {
+  background: #EFEFEF;
+}
+
+.form-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+}
+
+.form-desc {
+  font-weight: bold;
+  line-height: 3.8rem;
+}
+
+.w-520 {
+  width: 52rem;
+  padding: 1.2rem 1.6rem;
+  line-height: 1;
+  height: 3.8rem;
+}
+
+::placeholder {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.textarea {
+  resize: none;
+  height: 24rem;
+  line-height: 1;
+}
+
+.required {
+  position: relative;
+}
+
+.required::after {
+  content: '必須';
+  display: block;
+  position: absolute;
+  background: #E81919;
+  color: white;
+  font-weight: bold;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  line-height: 1;
+  bottom: -2.1rem;
+}
+
+.contact-form {
+  background: white;
+  padding: 6rem;
+  width: 80rem;
+  margin: 0 auto;
+}
+
+.contact-form__radio {
+  justify-content: flex-start;
+}

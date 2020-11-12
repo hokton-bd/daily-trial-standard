@@ -1,0 +1,66 @@
+.access {
+
+    .google-maps {
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 31.25%;
+        position: relative;
+        margin: 0 auto;
+        width: 80rem;
+        height: 40rem;
+        margin-bottom: 1.6rem;
+
+        iframe {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        }
+
+    }
+
+    &__desc {
+        margin-left: 20rem;
+        margin-bottom: 3rem;
+    }
+
+    .address {
+        &__title {
+            font-weight: bold;
+            margin-right: 7.2rem;
+        }
+        margin-bottom: 1.6rem;
+
+    }
+
+    .how-to {
+
+        &__title {
+            font-weight: bold;
+            margin-right: 4rem;
+        }
+
+    }
+
+    &__btn {
+        text-align: center;
+    }
+    
+    &__link {
+        @include btn();
+        padding: 2rem 7.7rem;
+        font-weight: bold;
+        border-radius: $bdr-8;
+        line-height: 1;
+        position: relative;
+
+        &::after {   
+            @include fa('\f105');
+            right: 1.2rem;
+        }
+
+    }
+
+
+}

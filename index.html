@@ -258,16 +258,41 @@
 
             <form action="" class="contact-form">
 
-                <div class="form-box contact-form__name required"><span class="name-desc form-desc">お名前</span><input class="w-520" type="text" name="" id="" placeholder="山田太郎" required></div>
-                <div class="form-box contact-form__email required"><span class="email-desc form-desc">メールアドレス</span><input class="w-520" type="email" name="" id="" placeholder="text@email.com" required></div>
-                <div class="form-box contact-form__type"><span class="type-desc form-desc">お問い合わせ種別</span><select class="w-520" name="" id=""><option value="">- - - -</option></select></div>
-                <div class="form-box contact-form__message"><span class="message-desc form-desc">お問い合わせ内容</span><textarea class="w-520 textarea" name="" id="" cols="30" rows="10" placeholder="お問い合わせ内容を入力してください"></textarea></div>
+                <div class="form-box contact-form__name required">
+                    <span class="name-desc form-desc">お名前</span>
+                    <input class="w-520 contact-form__input" type="text" name="" id="" placeholder="山田太郎" required>
+                </div><!-- /.name -->
+                
+                <div class="form-box contact-form__email required">
+                    <span class="email-desc form-desc">メールアドレス</span>
+                    <input class="w-520 contact-form__input" type="email" name="" id="" placeholder="text@email.com" required>
+                </div><!-- /.email -->
+                
+                <div class="form-box contact-form__type">
+                    <span class="type-desc form-desc">お問い合わせ種別</span>
+                    <select class="w-520 contact-form__select" name="" id="">
+                        <option value="">- - - -</option>
+                        <option value="">- - - -</option>
+                        <option value="">- - - -</option>
+                    </select>
+                </div><!-- /.type -->
+                
+                <div class="form-box contact-form__message">
+                    <span class="message-desc form-desc">お問い合わせ内容</span>
+                    <textarea class="w-520 textarea" name="" id="" cols="30" rows="10" placeholder="お問い合わせ内容を入力してください"></textarea>
+                </div><!-- /.message -->
+
                 <div class="form-box contact-form__radio">
-                    <label for="1" class="label"><input type="radio" name="test" id="1"><span class="radio-desc">ラジオ1</span></label>
-                    <label for="2" class="label"><input type="radio" name="test" id="2"><span class="radio-desc">ラジオ2</span></label>
-                    <label for="3" class="label"><input type="radio" name="test" id="3"><span class="radio-desc">ラジオ3</span></label>
+                    <label for="1" class="label"><input class="contact-form__input-radio" type="radio" name="test" id="1"><span class="radio-desc">ラジオ1</span></label>
+                    <label for="2" class="label"><input class="contact-form__input-radio" type="radio" name="test" id="2"><span class="radio-desc">ラジオ2</span></label>
+                    <label for="3" class="label"><input class="contact-form__input-radio" type="radio" name="test" id="3"><span class="radio-desc">ラジオ3</span></label>
                 </div>
-                <div class="form-box contact-form__privacy"><label for="check" class="label"><input type="checkbox" name="" id="check"><a href="" class="privacy-policy-link">プライバシーポリシー</a>に合意する</label></div>
+
+                <div class="form-box contact-form__privacy">
+                    <label for="check" class="label">
+                        <input type="checkbox" name="" id="check"><a href="" class="privacy-policy-link">プライバシーポリシー</a>に合意する
+                    </label>
+                </div>
 
                 <input type="submit" value="送信する" class="contact-form__submit btn">
 

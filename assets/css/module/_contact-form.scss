@@ -29,6 +29,7 @@
     resize: none;
     height: 24rem;
     line-height: 1;
+    border: $border;
 }
 
 .required {
@@ -58,6 +59,97 @@
     &__radio {
         justify-content: flex-start;
     }
+
+    &__input {
+
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: $border;
+
+    }
+
+    &__select {
+
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: $border;
+        background: transparent url(../images/down-arrow.svg) no-repeat center right 12px / 17px 14px;
+
+
+    }
+
+    &__message {
+        margin-bottom: 3.3rem;
+    }
+
+    &__input-radio {
+
+        display: none;
+
+        &:checked {
+
+            + span {
+
+                &::after {
+                    opacity: 1;
+
+                }
+
+            }
+
+        }
+
+        + span {
+
+            cursor: pointer;
+            display: inline-block;
+            margin-right: 3.6rem;
+            position: relative;
+            padding-left: 2.8rem;
+
+            &::before {
+
+                -webkit-transform: translateY(-50%);
+                background: #fff;
+                border: 1px solid rgba(0, 0, 0, 0.16);
+                border-radius: 50%;
+                content: "";
+                display: block;
+                height: 18px;
+                left: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 18px;
+                line-height: 1;
+
+            }
+
+            &::after {
+
+                -webkit-transform: translateY(-50%);
+                background: $main;
+                border: 1px solid transparent;
+                border-radius: 50%;
+                content: "";
+                height: 8px;
+                left: 5px;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: all 0.3s ease 0s;
+                width: 8px;
+
+            }
+
+        }
+
+    }
+
+
 
 
 

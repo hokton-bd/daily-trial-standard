@@ -149,6 +149,107 @@
 
     }
 
+    &__privacy {
+
+        label {
+            display: block;
+            margin: 0 auto;
+        }
+
+        a {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+    }
+
+    &__checkbox {
+
+        display: none;
+
+        &:checked {
+
+            + span {
+
+                &::after {
+
+                    opacity: 1;
+
+                }
+
+            }
+
+        }
+
+        + span {
+
+            cursor: pointer;
+            display: inline-block;
+            padding: 0 0 0 4.8rem;
+            position: relative;
+
+            &::before {
+
+                -webkit-transform: translateY(-50%);
+                background: #fff;
+                border: $border;
+                border-radius: 2px;
+                content: "";
+                display: block;
+                height: 2.3rem;
+                left: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 2.3rem;
+
+            }
+
+            &::after {
+
+                -webkit-transform: translateY(-50%) rotate(-45deg);
+                border-bottom: 3px solid $main;
+                border-left: 3px solid $main;
+                content: "";
+                display: block;
+                height: 0.6em;
+                left: 3px;
+                margin-top: -0.2em;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%) rotate(-45deg);
+                transition: all 0.3s ease 0s;
+                width: 1em;
+
+            }
+
+        }
+
+
+
+    }
+
+    &__submit {
+
+        -webkit-appearance: none;
+        background: $main url(../images/right.svg) no-repeat center right 12px / 17px 14px;
+        border: none;
+        border-radius: 0;
+        color: #fff;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        font-size: 1em;
+        padding: 2rem 12rem;
+        text-decoration: none;
+        line-height: 1;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, .3);
+        border-radius: $bdr-8;
+        font-weight: bold;
+
+    }
+
 
 
 

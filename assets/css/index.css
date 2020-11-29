@@ -532,3 +532,78 @@ p {
   transition: all 0.3s ease 0s;
   width: 8px;
 }
+
+.contact-form__privacy label {
+  display: block;
+  margin: 0 auto;
+}
+
+.contact-form__privacy a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.contact-form__checkbox {
+  display: none;
+}
+
+.contact-form__checkbox:checked + span::after {
+  opacity: 1;
+}
+
+.contact-form__checkbox + span {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 0 0 4.8rem;
+  position: relative;
+}
+
+.contact-form__checkbox + span::before {
+  -webkit-transform: translateY(-50%);
+  background: #fff;
+  border: 1px solid #707070;
+  border-radius: 2px;
+  content: "";
+  display: block;
+  height: 2.3rem;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.3rem;
+}
+
+.contact-form__checkbox + span::after {
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+  border-bottom: 3px solid #3F51B5;
+  border-left: 3px solid #3F51B5;
+  content: "";
+  display: block;
+  height: 0.6em;
+  left: 3px;
+  margin-top: -0.2em;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+  transition: all 0.3s ease 0s;
+  width: 1em;
+}
+
+.contact-form__submit {
+  -webkit-appearance: none;
+  background: #3F51B5 url(../images/right.svg) no-repeat center right 12px/17px 14px;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  font-size: 1em;
+  padding: 2rem 12rem;
+  text-decoration: none;
+  line-height: 1;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  font-weight: bold;
+}

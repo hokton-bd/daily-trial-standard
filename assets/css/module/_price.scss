@@ -3,7 +3,6 @@
 
     .content {
         display: flex;
-<<<<<<< HEAD
         justify-content: space-between;
     }
 
@@ -16,19 +15,10 @@
 
     .table {
         width: 706px;
-=======
-    }
-
-    &__img {
-        width: 454px;
-        margin-right: 4rem;
-        height: 28.6rem;
->>>>>>> 65dc816a4ae3144e6b3ff664f5cb9cea08720c7d
     }
 
     &__table {
         border-collapse: collapse;
-<<<<<<< HEAD
         background: #fff;
         width: 100%;
         margin-bottom: 1.2rem;
@@ -59,43 +49,10 @@
     .bg-grey {
         background: #707070;
         color: #fff;
-=======
-        width: 704px;
-        background: white;
-        text-align: right;
-        font-weight: bold;
-        margin-bottom: 1.2rem;
-    }
-
-    th, td {
-        padding: 1.6rem 0rem;
-        width: 26.6rem;
-        border: $border;
-        padding-right: 2.5rem;
-        max-height: 5.6rem;
-    }
-
-    .bg-grey {
-        background: $table-bg;
-        color: white;
-        text-align: center;
-        padding-right: 0;
-    }
-
-    .p-22 {
-        width: 17rem;
-        padding-right: 0;
-    }
-
-    .desc {
-        display: block;
-        font-size: 1.3rem;
->>>>>>> 65dc816a4ae3144e6b3ff664f5cb9cea08720c7d
     }
 
     .text-red {
         color: $red;
-<<<<<<< HEAD
     }
 
     .desc {
@@ -177,15 +134,5 @@
     .contact-form {
         background: white;
     }
-=======
-        padding: 0 2.5rem 0 0;
-    }
-
-    .contact-link {
-        font-weight: bold;
-        text-decoration: underline;
-    }
-
->>>>>>> 65dc816a4ae3144e6b3ff664f5cb9cea08720c7d
 
 }

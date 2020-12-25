@@ -258,29 +258,43 @@
 
             <form action="" class="contact-form">
 
-                <p class="input name">お名前<input type="text" placeholder="山田  太郎"></p>
+                <div class="form-box contact-form__name required">
+                    <span class="name-desc form-desc">お名前</span>
+                    <input class="w-520 contact-form__input" type="text" name="" id="" placeholder="山田太郎" required>
+                </div><!-- /.name -->
 
-                <p class="input email">メールアドレス<input type="email" name="" id="" placeholder="text@example.com"></p>
+                <div class="form-box contact-form__email required">
+                    <span class="email-desc form-desc">メールアドレス</span>
+                    <input class="w-520 contact-form__input" type="email" name="" id="" placeholder="text@email.com" required>
+                </div><!-- /.email -->
 
-                <p class="input type">お問い合わせ種別
-                    <select name="" id="">
-                        <option value="">---</option>
+                <div class="form-box contact-form__type">
+                    <span class="type-desc form-desc">お問い合わせ種別</span>
+                    <select class="w-520 contact-form__select" name="" id="">
+                        <option value="">- - - -</option>
+                        <option value="">- - - -</option>
+                        <option value="">- - - -</option>
                     </select>
-                </p>
+                </div><!-- /.type -->
 
-                <p class="input message">お問い合わせ内容<textarea name="" id="" cols="30" rows="10" placeholder="お問い合わせ内容を入力してください"></textarea></p>
+                <div class="form-box contact-form__message">
+                    <span class="message-desc form-desc">お問い合わせ内容</span>
+                    <textarea class="w-520 textarea" name="" id="" cols="30" rows="10" placeholder="お問い合わせ内容を入力してください"></textarea>
+                </div><!-- /.message -->
 
-                <div class="input">
-                    <label for="" class="label"><input type="radio" class="radio">ラジオ1</label>
-                    <label for="" class="label"><input type="radio" class="radio">ラジオ2</label>
-                    <label for="" class="label"><input type="radio" class="radio">ラジオ3</label>
+                <div class="form-box contact-form__radio">
+                    <label for="1" class="label"><input class="contact-form__input-radio" type="radio" name="test" id="1"><span class="radio-desc">ラジオ1</span></label>
+                    <label for="2" class="label"><input class="contact-form__input-radio" type="radio" name="test" id="2"><span class="radio-desc">ラジオ2</span></label>
+                    <label for="3" class="label"><input class="contact-form__input-radio" type="radio" name="test" id="3"><span class="radio-desc">ラジオ3</span></label>
                 </div>
 
-                <div class="check">
-                    <label for="" class="label"><input type="checkbox" name="" id="" class="checkbox"><a href="" class="privacy-policy">プライバシーポリシー</a>に合意する</label>
+                <div class="form-box contact-form__privacy">
+                    <label for="check" class="label">
+                        <input class="contact-form__checkbox" type="checkbox" name="" id="check"><span><a href="#" class="privacy-policy-link">プライバシーポリシー</a>に合意する</span>
+                    </label>
                 </div>
 
-                <input type="submit" value="送信する">
+                <input type="submit" value="送信する" class="contact-form__submit btn">
 
             </form>
 
@@ -292,7 +306,15 @@
     <footer class="footer">
     <div class="inner">
         
+        <div class="footer-left footer__left">
+            <div class="footer-left__logo logo"><img src="assets/images/logo.png" alt=""></div><!-- /.footer-logo -->
+            <div class="access__desc footer-left__desc">
+                <p class="address"><span class="address__title">住所</span><span class="address__content">ほげほげほげのほげの場所</span></p>
+                <p class="how-to"><span class="how-to__title">アクセス</span><span class="how-to__content">〇〇駅から右に５分</span></p>
+            </div>
+        </div><!-- /.footer-left -->
 
+        <div class="footer-center footer__center"></div>
 
     </div>
     </footer>

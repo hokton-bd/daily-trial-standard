@@ -238,15 +238,14 @@ p {
 .news__link {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .news .date {
-  margin-right: 2rem;
   margin-top: 0.9rem;
 }
 
 .news .label {
-  margin-right: 2rem;
   line-height: 1;
   max-height: 3.2rem;
   width: 8rem;
@@ -289,7 +288,6 @@ p {
 
 .price .content {
   display: flex;
-<<<<<<< HEAD
   justify-content: space-between;
 }
 
@@ -300,19 +298,10 @@ p {
 
 .price .table {
   width: 706px;
-=======
-}
-
-.price__img {
-  width: 454px;
-  margin-right: 4rem;
-  height: 28.6rem;
->>>>>>> 65dc816a4ae3144e6b3ff664f5cb9cea08720c7d
 }
 
 .price__table {
   border-collapse: collapse;
-<<<<<<< HEAD
   background: #fff;
   width: 100%;
   margin-bottom: 1.2rem;
@@ -337,46 +326,19 @@ p {
 .price .tac {
   text-align: center;
   padding: 2rem 1.6rem;
-=======
-  width: 704px;
-  background: white;
-  text-align: right;
-  font-weight: bold;
-  margin-bottom: 1.2rem;
-}
-
-.price th, .price td {
-  padding: 1.6rem 0rem;
-  width: 26.6rem;
-  border: 1px solid #707070;
-  padding-right: 2.5rem;
-  max-height: 5.6rem;
->>>>>>> 65dc816a4ae3144e6b3ff664f5cb9cea08720c7d
 }
 
 .price .bg-grey {
   background: #707070;
-<<<<<<< HEAD
   color: #fff;
 }
 
 .price .text-red {
   color: #E81919;
-=======
-  color: white;
-  text-align: center;
-  padding-right: 0;
-}
-
-.price .p-22 {
-  width: 17rem;
-  padding-right: 0;
->>>>>>> 65dc816a4ae3144e6b3ff664f5cb9cea08720c7d
 }
 
 .price .desc {
   display: block;
-<<<<<<< HEAD
 }
 
 .price .contact-link {
@@ -400,18 +362,49 @@ p {
 .access .map-desc {
   margin-top: 1.6rem;
   margin-left: 20rem;
-=======
-  font-size: 1.3rem;
 }
 
-.price .text-red {
-  color: #E81919;
-  padding: 0 2.5rem 0 0;
+.access .address {
+  margin-bottom: 1.6rem;
 }
 
-.price .contact-link {
+.access .address-title {
+  margin-right: 7.2rem;
+}
+
+.access .access-title {
+  margin-right: 4rem;
+}
+
+.access .see-google-map {
+  display: block;
+  background: #3F51B5;
+  border-radius: 8px;
+  color: #fff;
+  padding: 2rem 7.7rem;
+  line-height: 1;
+  margin: 0 auto;
+  width: 30.4rem;
+  position: relative;
+  margin-top: 3rem;
+}
+
+.access .see-google-map::after {
+  content: "";
+  position: absolute;
+  font-family: 'Font Awesome 5 Free';
   font-weight: bold;
-  text-decoration: underline;
+  color: white;
+  right: 12px;
+  font-size: 1.6rem;
+}
+
+.contact {
+  background: #EFEFEF;
+}
+
+.contact .contact-form {
+  background: white;
 }
 
 .access .google-maps {
@@ -436,37 +429,12 @@ p {
 .access__desc {
   margin-left: 20rem;
   margin-bottom: 3rem;
->>>>>>> 65dc816a4ae3144e6b3ff664f5cb9cea08720c7d
 }
 
 .access .address {
   margin-bottom: 1.6rem;
 }
 
-<<<<<<< HEAD
-.access .address-title {
-  margin-right: 7.2rem;
-}
-
-.access .access-title {
-  margin-right: 4rem;
-}
-
-.access .see-google-map {
-  display: block;
-  background: #3F51B5;
-  border-radius: 8px;
-  color: #fff;
-  padding: 2rem 7.7rem;
-  line-height: 1;
-  margin: 0 auto;
-  width: 30.4rem;
-  position: relative;
-  margin-top: 3rem;
-}
-
-.access .see-google-map::after {
-=======
 .access .address__title {
   font-weight: bold;
   margin-right: 7.2rem;
@@ -494,28 +462,17 @@ p {
 }
 
 .access__link::after {
->>>>>>> 65dc816a4ae3144e6b3ff664f5cb9cea08720c7d
   content: "";
   position: absolute;
   font-family: 'Font Awesome 5 Free';
   font-weight: bold;
-<<<<<<< HEAD
-  color: white;
-  right: 12px;
-  font-size: 1.6rem;
-=======
   right: 1.2rem;
->>>>>>> 65dc816a4ae3144e6b3ff664f5cb9cea08720c7d
 }
 
 .contact {
   background: #EFEFEF;
 }
 
-<<<<<<< HEAD
-.contact .contact-form {
-  background: white;
-=======
 .form-box {
   display: flex;
   justify-content: space-between;
@@ -715,5 +672,4 @@ p {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
   border-radius: 8px;
   font-weight: bold;
->>>>>>> 65dc816a4ae3144e6b3ff664f5cb9cea08720c7d
 }

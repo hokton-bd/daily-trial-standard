@@ -1,0 +1,257 @@
+.form-box {
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+
+}
+
+.form-desc {
+
+    font-weight: bold;
+    line-height: 3.8rem;
+
+}
+
+.w-520 {
+    width: 52rem;
+    padding: 1.2rem 1.6rem;
+    line-height: 1;
+    height: 3.8rem;
+    
+}
+::placeholder {
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.textarea {
+    resize: none;
+    height: 24rem;
+    line-height: 1;
+    border: $border;
+}
+
+.required {
+    position: relative;
+    &::after {
+        content: '必須';
+        display: block;
+        position: absolute;
+        background: $red;
+        color: white;
+        font-weight: bold;
+        padding: 0.4rem 0.8rem;
+        border-radius: $bdr-4;
+        font-size: 1.4rem;
+        line-height: 1;
+        bottom: -2.1rem;
+    }
+}
+
+.contact-form {
+
+    background: white;
+    padding: 6rem;
+    width: 80rem;
+    margin: 0 auto;
+
+    &__radio {
+        justify-content: flex-start;
+    }
+
+    &__input {
+
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: $border;
+
+    }
+
+    &__select {
+
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: $border;
+        background: transparent url(../images/down-arrow.svg) no-repeat center right 12px / 17px 14px;
+
+
+    }
+
+    &__message {
+        margin-bottom: 3.3rem;
+    }
+
+    &__input-radio {
+
+        display: none;
+
+        &:checked {
+
+            + span {
+
+                &::after {
+                    opacity: 1;
+
+                }
+
+            }
+
+        }
+
+        + span {
+
+            cursor: pointer;
+            display: inline-block;
+            margin-right: 3.6rem;
+            position: relative;
+            padding-left: 2.8rem;
+
+            &::before {
+
+                -webkit-transform: translateY(-50%);
+                background: #fff;
+                border: 1px solid rgba(0, 0, 0, 0.16);
+                border-radius: 50%;
+                content: "";
+                display: block;
+                height: 18px;
+                left: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 18px;
+                line-height: 1;
+
+            }
+
+            &::after {
+
+                -webkit-transform: translateY(-50%);
+                background: $main;
+                border: 1px solid transparent;
+                border-radius: 50%;
+                content: "";
+                height: 8px;
+                left: 5px;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: all 0.3s ease 0s;
+                width: 8px;
+
+            }
+
+        }
+
+    }
+
+    &__privacy {
+
+        label {
+            display: block;
+            margin: 0 auto;
+        }
+
+        a {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+    }
+
+    &__checkbox {
+
+        display: none;
+
+        &:checked {
+
+            + span {
+
+                &::after {
+
+                    opacity: 1;
+
+                }
+
+            }
+
+        }
+
+        + span {
+
+            cursor: pointer;
+            display: inline-block;
+            padding: 0 0 0 4.8rem;
+            position: relative;
+
+            &::before {
+
+                -webkit-transform: translateY(-50%);
+                background: #fff;
+                border: $border;
+                border-radius: 2px;
+                content: "";
+                display: block;
+                height: 2.3rem;
+                left: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 2.3rem;
+
+            }
+
+            &::after {
+
+                -webkit-transform: translateY(-50%) rotate(-45deg);
+                border-bottom: 3px solid $main;
+                border-left: 3px solid $main;
+                content: "";
+                display: block;
+                height: 0.6em;
+                left: 3px;
+                margin-top: -0.2em;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%) rotate(-45deg);
+                transition: all 0.3s ease 0s;
+                width: 1em;
+
+            }
+
+        }
+
+
+
+    }
+
+    &__submit {
+
+        -webkit-appearance: none;
+        background: $main url(../images/right.svg) no-repeat center right 12px / 17px 14px;
+        border: none;
+        border-radius: 0;
+        color: #fff;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        font-size: 1em;
+        padding: 2rem 12rem;
+        text-decoration: none;
+        line-height: 1;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, .3);
+        border-radius: $bdr-8;
+        font-weight: bold;
+
+    }
+
+
+
+
+
+}

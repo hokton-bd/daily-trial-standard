@@ -1,3 +1,138 @@
 .price {
     background: $bg-grey;
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__price-img {
+
+        width: 454px;
+        margin-right: 4rem;
+
+    }
+
+    .table {
+        width: 706px;
+    }
+
+    &__table {
+        border-collapse: collapse;
+        background: #fff;
+        width: 100%;
+        margin-bottom: 1.2rem;
+    }
+
+    td, tr, th {
+        border: $border;
+    }
+
+    td, th {
+        width: 22.6rem;
+        height: 5.6rem;
+    }
+
+    
+    td {
+        text-align: right;
+        line-height: 1;
+        padding-right: 1.6rem;
+        font-weight: bold;
+    }
+
+    .tac {
+        text-align: center;
+        padding: 2rem 1.6rem;
+    }
+
+    .bg-grey {
+        background: #707070;
+        color: #fff;
+    }
+
+    .text-red {
+        color: $red;
+    }
+
+    .desc {
+        display: block;
+    }
+
+    .contact-link {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+}
+
+.access {
+
+    .google-map {
+        position: relative;
+        width: 80rem;
+        height: 40rem;
+        margin: 0 auto;
+
+        iframe {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+    }
+
+    .map-desc {
+
+        margin-top: 1.6rem;
+        margin-left: 20rem;
+
+    }
+
+    .address {
+        margin-bottom: 1.6rem;
+    }
+
+    .address-title {
+        margin-right: 7.2rem;
+    }
+
+    .access-title {
+        margin-right: 4rem;
+    }
+    
+    .see-google-map {
+        display: block;
+        background: $main;
+        border-radius: 8px;
+        color: #fff;
+        padding: 2rem 7.7rem;
+        line-height: 1;
+        margin: 0 auto;
+        width: 30.4rem;
+        position: relative;
+        margin-top: 3rem;
+
+        &::after {
+
+            @include fa('\f105');
+            color: white;
+            right: 12px;
+            font-size: 1.6rem;
+
+        }
+
+    }
+
+
+}
+
+.contact {
+
+    background: $bg-grey;
+
+    .contact-form {
+        background: white;
+    }
+
 }

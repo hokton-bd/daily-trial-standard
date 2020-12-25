@@ -285,3 +285,124 @@ p {
 .price {
   background: #EFEFEF;
 }
+
+.price .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price__price-img {
+  width: 454px;
+  margin-right: 4rem;
+}
+
+.price .table {
+  width: 706px;
+}
+
+.price__table {
+  border-collapse: collapse;
+  background: #fff;
+  width: 100%;
+  margin-bottom: 1.2rem;
+}
+
+.price td, .price tr, .price th {
+  border: 1px solid #707070;
+}
+
+.price td, .price th {
+  width: 22.6rem;
+  height: 5.6rem;
+}
+
+.price td {
+  text-align: right;
+  line-height: 1;
+  padding-right: 1.6rem;
+  font-weight: bold;
+}
+
+.price .tac {
+  text-align: center;
+  padding: 2rem 1.6rem;
+}
+
+.price .bg-grey {
+  background: #707070;
+  color: #fff;
+}
+
+.price .text-red {
+  color: #E81919;
+}
+
+.price .desc {
+  display: block;
+}
+
+.price .contact-link {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.access .google-map {
+  position: relative;
+  width: 80rem;
+  height: 40rem;
+  margin: 0 auto;
+}
+
+.access .google-map iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.access .map-desc {
+  margin-top: 1.6rem;
+  margin-left: 20rem;
+}
+
+.access .address {
+  margin-bottom: 1.6rem;
+}
+
+.access .address-title {
+  margin-right: 7.2rem;
+}
+
+.access .access-title {
+  margin-right: 4rem;
+}
+
+.access .see-google-map {
+  display: block;
+  background: #3F51B5;
+  border-radius: 8px;
+  color: #fff;
+  padding: 2rem 7.7rem;
+  line-height: 1;
+  margin: 0 auto;
+  width: 30.4rem;
+  position: relative;
+  margin-top: 3rem;
+}
+
+.access .see-google-map::after {
+  content: "";
+  position: absolute;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: bold;
+  color: white;
+  right: 12px;
+  font-size: 1.6rem;
+}
+
+.contact {
+  background: #EFEFEF;
+}
+
+.contact .contact-form {
+  background: white;
+}

@@ -195,27 +195,27 @@
 
                 <table class="price__table">
                     <tr>
-                        <th></th>
-                        <th>column1</th>
-                        <th>column2</th>
+                        <th class="bg-grey tac"></th>
+                        <th class="bg-grey">column1</th>
+                        <th class="bg-grey">column2</th>
                     </tr>
                     <tr>
-                        <td>row1</td>
+                        <td class="bg-grey tac">row1</td>
                         <td>100円</td>
                         <td>100円</td>
                     </tr>
                     <tr>
-                        <td>row2</td>
+                        <td class="bg-grey tac">row2</td>
                         <td>6000円</td>
                         <td>0円</td>
                     </tr>
                     <tr>
-                        <td>row3</td>
+                        <td class="bg-grey tac">row3</td>
                         <td class="text-red">6000円<span class="desc">※今だけ半額</span></td>
                         <td>0円</td>
                     </tr>
                     <tr>
-                        <td>row4</td>
+                        <td class="bg-grey tac">row4</td>
                         <td>100円</td>
                         <td>100円</td>
                     </tr>
@@ -235,6 +235,20 @@
         
             <h2 class="section-title">access</h2>
 
+            <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.668041891194!2d139.75061081572616!3d35.685174980193366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c0d02d8064d%3A0xd11a5f0b379e6db7!2z55qH5bGF!5e0!3m2!1sja!2sjp!4v1603344400260!5m2!1sja!2sjp" width="800" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+            <div class="map-desc">
+                <p class="address"><span class="address-title">住所</span><span class="address-content">ほげほげほげのほげの場所</span></p>
+                <p class="access-note">
+                    <span class="access-title">アクセス</span>
+                    <span class="access-content">〇〇駅から右に５分</span>
+                </p>
+            </div>
+
+            <a href="google.com" class="see-google-map">Googleマップで見る</a>
+
         </div><!-- /.inner -->
         </section><!-- access -->
 
@@ -242,6 +256,34 @@
         <div class="inner contact__inner section__inner">
         
             <h2 class="section-title">contact</h2>
+
+            <form action="" class="contact-form">
+
+                <p class="input name">お名前<input type="text" placeholder="山田  太郎"></p>
+
+                <p class="input email">メールアドレス<input type="email" name="" id="" placeholder="text@example.com"></p>
+
+                <p class="input type">お問い合わせ種別
+                    <select name="" id="">
+                        <option value="">---</option>
+                    </select>
+                </p>
+
+                <p class="input message">お問い合わせ内容<textarea name="" id="" cols="30" rows="10" placeholder="お問い合わせ内容を入力してください"></textarea></p>
+
+                <div class="input">
+                    <label for="" class="label"><input type="radio" class="radio">ラジオ1</label>
+                    <label for="" class="label"><input type="radio" class="radio">ラジオ2</label>
+                    <label for="" class="label"><input type="radio" class="radio">ラジオ3</label>
+                </div>
+
+                <div class="check">
+                    <label for="" class="label"><input type="checkbox" name="" id="" class="checkbox"><a href="" class="privacy-policy">プライバシーポリシー</a>に合意する</label>
+                </div>
+
+                <input type="submit" value="送信する">
+
+            </form>
 
         </div><!-- /.inner -->
         </section><!-- contact -->

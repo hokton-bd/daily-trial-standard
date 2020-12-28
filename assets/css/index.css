@@ -325,15 +325,11 @@ p {
   height: 5.6rem;
 }
 
-<<<<<<< HEAD
 .price th, .price td {
   border: 1px solid #707070;
   padding-right: 2.5rem;
   max-height: 5.6rem;
   vertical-align: middle;
-=======
-.price td, .price tr, .price th {
-  border: 1px solid #707070;
 }
 
 .price td, .price th {
@@ -341,71 +337,72 @@ p {
   height: 5.6rem;
 }
 
-.price td {
+.price .desc {
+  display: block;
+  font-size: 1.3rem;
+}
+
+.price .desc td {
   text-align: right;
   line-height: 1;
   padding-right: 1.6rem;
   font-weight: bold;
 }
 
-.price .tac {
+.price .desc .tac {
   text-align: center;
   padding: 2rem 1.6rem;
->>>>>>> 3809856c8ebd87c88b247707510bb68f71fd90a6
 }
 
-.price .bg-grey {
+.price .desc .bg-grey {
   background: #707070;
   color: #fff;
 }
 
-<<<<<<< HEAD
-=======
-.price .text-red {
+.price .desc .text-red {
   color: #E81919;
 }
 
->>>>>>> 3809856c8ebd87c88b247707510bb68f71fd90a6
-.price .desc {
+.price .desc .desc {
   display: block;
 }
 
-.price .contact-link {
+.price .desc .contact-link {
   text-decoration: underline;
   font-weight: bold;
 }
 
-.access .google-map {
+.price .access .google-map {
   position: relative;
   width: 80rem;
   height: 40rem;
   margin: 0 auto;
 }
 
-.access .google-map iframe {
+.price .access .google-map iframe {
   position: absolute;
   left: 0;
   top: 0;
 }
 
-.access .map-desc {
+.price .access .map-desc {
   margin-top: 1.6rem;
   margin-left: 20rem;
 }
 
-.access .address {
+.price .access .address {
   margin-bottom: 1.6rem;
 }
 
-.access .address-title {
+.price .access .address-title {
   margin-right: 7.2rem;
 }
 
-.access .access-title {
+.price .access .access-title {
   margin-right: 4rem;
 }
 
-.access .see-google-map {
+.price .access .see-google-map {
   display: block;
   background: #3F51B5;
   border-radius: 8px;
@@ -418,7 +415,7 @@ p {
   margin-top: 3rem;
 }
 
-.access .see-google-map::after {
+.price .access .see-google-map::after {
   content: "";
   position: absolute;
   font-family: 'Font Awesome 5 Free';
@@ -428,11 +425,11 @@ p {
   font-size: 1.6rem;
 }
 
-.contact {
+.price .contact {
   background: #EFEFEF;
 }
 
-.contact .contact-form {
+.price .contact .contact-form {
   background: white;
 }
 

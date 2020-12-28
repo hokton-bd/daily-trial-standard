@@ -38,16 +38,11 @@
         height: 5.6rem;
     }
 
-<<<<<<< HEAD
     th, td {
         border: $border;
         padding-right: 2.5rem;
         max-height: 5.6rem;
         vertical-align: middle;
-=======
-    td, tr, th {
-        border: $border;
->>>>>>> 3809856c8ebd87c88b247707510bb68f71fd90a6
     }
 
     td, th {
@@ -55,11 +50,9 @@
         height: 5.6rem;
     }
 
-<<<<<<< HEAD
     .desc {
         display: block;
         font-size: 1.3rem;
-=======
     
     td {
         text-align: right;
@@ -76,7 +69,6 @@
     .bg-grey {
         background: #707070;
         color: #fff;
->>>>>>> 3809856c8ebd87c88b247707510bb68f71fd90a6
     }
 
     .text-red {
@@ -162,5 +154,7 @@
     .contact-form {
         background: white;
     }
+
+}
 
 }

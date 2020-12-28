@@ -1,0 +1,8 @@
+.footer-access-desc__address, .footer-access-desc__tel {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.footer-access-desc__address {
+  margin-bottom: 1.4rem;
+}

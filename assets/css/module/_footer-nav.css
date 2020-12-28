@@ -1,0 +1,13 @@
+.footer-nav__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav__item {
+  margin-right: 40px;
+}
+
+.footer-nav__link {
+  color: white;
+  font-size: 1.6rem;
+}

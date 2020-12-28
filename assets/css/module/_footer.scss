@@ -1,0 +1,23 @@
+.footer {
+
+    background: linear-gradient($footer1, $footer2);
+
+    &__inner {
+
+        padding: 4rem 1.6rem 2.4rem;
+
+    }
+
+    &__upper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4.6rem;
+    }
+
+    &__center {
+
+        margin: 0 auto;
+
+    }
+
+}

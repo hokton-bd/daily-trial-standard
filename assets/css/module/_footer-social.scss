@@ -1,0 +1,47 @@
+.footer-social {
+
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+
+        margin-right: 1.6rem;
+
+        .fab {
+            color: white;
+        }
+
+        &:first-child {
+            
+            span {
+                background: $twitter;
+            }
+
+        }
+
+        &:nth-child(2) {
+            
+            span {
+                background: $facebook;
+            }
+
+        }
+
+        &:last-child {
+            
+            span {
+                background: $insta;
+            }
+
+        }
+
+
+
+    }
+
+    &__icon {
+        border-radius: 50%;
+        padding: .7rem .5rem;
+    }
+
+}

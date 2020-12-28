@@ -4,20 +4,24 @@
 
     .content {
         display: flex;
+        justify-content: space-between;
     }
 
-    &__img {
+    &__price-img {
+
         width: 454px;
         margin-right: 4rem;
-        height: 28.6rem;
+
+    }
+
+    .table {
+        width: 706px;
     }
 
     &__table {
         border-collapse: collapse;
-        width: 704px;
-        background: white;
-        text-align: right;
-        font-weight: bold;
+        background: #fff;
+        width: 100%;
         margin-bottom: 1.2rem;
         table-layout: fixed;
     }
@@ -34,34 +38,129 @@
         height: 5.6rem;
     }
 
+<<<<<<< HEAD
     th, td {
         border: $border;
         padding-right: 2.5rem;
         max-height: 5.6rem;
         vertical-align: middle;
+=======
+    td, tr, th {
+        border: $border;
+>>>>>>> 3809856c8ebd87c88b247707510bb68f71fd90a6
     }
 
-    .bg-grey {
-        background: $table-bg;
-        color: white;
-        text-align: center;
-        padding-right: 0;
+    td, th {
+        width: 22.6rem;
+        height: 5.6rem;
     }
 
+<<<<<<< HEAD
     .desc {
         display: block;
         font-size: 1.3rem;
+=======
+    
+    td {
+        text-align: right;
+        line-height: 1;
+        padding-right: 1.6rem;
+        font-weight: bold;
+    }
+
+    .tac {
+        text-align: center;
+        padding: 2rem 1.6rem;
+    }
+
+    .bg-grey {
+        background: #707070;
+        color: #fff;
+>>>>>>> 3809856c8ebd87c88b247707510bb68f71fd90a6
     }
 
     .text-red {
         color: $red;
-        padding: 0 2.5rem 0 0;
+    }
+
+    .desc {
+        display: block;
     }
 
     .contact-link {
-        font-weight: bold;
         text-decoration: underline;
+        font-weight: bold;
     }
 
+}
+
+.access {
+
+    .google-map {
+        position: relative;
+        width: 80rem;
+        height: 40rem;
+        margin: 0 auto;
+
+        iframe {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+    }
+
+    .map-desc {
+
+        margin-top: 1.6rem;
+        margin-left: 20rem;
+
+    }
+
+    .address {
+        margin-bottom: 1.6rem;
+    }
+
+    .address-title {
+        margin-right: 7.2rem;
+    }
+
+    .access-title {
+        margin-right: 4rem;
+    }
+    
+    .see-google-map {
+        display: block;
+        background: $main;
+        border-radius: 8px;
+        color: #fff;
+        padding: 2rem 7.7rem;
+        line-height: 1;
+        margin: 0 auto;
+        width: 30.4rem;
+        position: relative;
+        margin-top: 3rem;
+
+        &::after {
+
+            @include fa('\f105');
+            color: white;
+            right: 12px;
+            font-size: 1.6rem;
+
+        }
+
+    }
+
+
+}
+
+.contact {
+
+    background: $bg-grey;
+
+    .contact-form {
+        background: white;
+    }
 
 }

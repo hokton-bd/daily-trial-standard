@@ -1,0 +1,13 @@
+.toggler {
+  background: transparent;
+  cursor: pointer;
+}
+
+.toggler__bar {
+  display: block;
+  content: '';
+  background: white;
+  width: 32px;
+  height: 2px;
+  margin-bottom: 8px;
+}

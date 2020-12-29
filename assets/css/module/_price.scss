@@ -7,7 +7,7 @@
         justify-content: space-between;
     }
 
-    &__price-img {
+    &__img {
 
         width: 454px;
         margin-right: 4rem;
@@ -40,19 +40,14 @@
 
     th, td {
         border: $border;
-        padding-right: 2.5rem;
         max-height: 5.6rem;
         vertical-align: middle;
-    }
-
-    td, th {
-        width: 22.6rem;
-        height: 5.6rem;
     }
 
     .desc {
         display: block;
         font-size: 1.3rem;
+    }
     
     td {
         text-align: right;
@@ -154,7 +149,5 @@
     .contact-form {
         background: white;
     }
-
-}
 
 }

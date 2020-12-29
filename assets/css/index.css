@@ -154,7 +154,7 @@ p {
 }
 
 .section__inner {
-  padding: 10rem 1.6rem 12rem;
+  padding: 10rem 0rem 12rem;
 }
 
 .card {
@@ -300,7 +300,7 @@ p {
   justify-content: space-between;
 }
 
-.price__price-img {
+.price__img {
   width: 454px;
   margin-right: 4rem;
 }
@@ -327,14 +327,8 @@ p {
 
 .price th, .price td {
   border: 1px solid #707070;
-  padding-right: 2.5rem;
   max-height: 5.6rem;
   vertical-align: middle;
-}
-
-.price td, .price th {
-  width: 22.6rem;
-  height: 5.6rem;
 }
 
 .price .desc {
@@ -342,67 +336,67 @@ p {
   font-size: 1.3rem;
 }
 
-.price .desc td {
+.price td {
   text-align: right;
   line-height: 1;
   padding-right: 1.6rem;
   font-weight: bold;
 }
 
-.price .desc .tac {
+.price .tac {
   text-align: center;
   padding: 2rem 1.6rem;
 }
 
-.price .desc .bg-grey {
+.price .bg-grey {
   background: #707070;
   color: #fff;
 }
 
-.price .desc .text-red {
+.price .text-red {
   color: #E81919;
 }
 
-.price .desc .desc {
+.price .desc {
   display: block;
 }
 
-.price .desc .contact-link {
+.price .contact-link {
   text-decoration: underline;
   font-weight: bold;
 }
 
-.price .access .google-map {
+.access .google-map {
   position: relative;
   width: 80rem;
   height: 40rem;
   margin: 0 auto;
 }
 
-.price .access .google-map iframe {
+.access .google-map iframe {
   position: absolute;
   left: 0;
   top: 0;
 }
 
-.price .access .map-desc {
+.access .map-desc {
   margin-top: 1.6rem;
   margin-left: 20rem;
 }
 
-.price .access .address {
+.access .address {
   margin-bottom: 1.6rem;
 }
 
-.price .access .address-title {
+.access .address-title {
   margin-right: 7.2rem;
 }
 
-.price .access .access-title {
+.access .access-title {
   margin-right: 4rem;
 }
 
-.price .access .see-google-map {
+.access .see-google-map {
   display: block;
   background: #3F51B5;
   border-radius: 8px;
@@ -415,7 +409,7 @@ p {
   margin-top: 3rem;
 }
 
-.price .access .see-google-map::after {
+.access .see-google-map::after {
   content: "";
   position: absolute;
   font-family: 'Font Awesome 5 Free';
@@ -425,11 +419,11 @@ p {
   font-size: 1.6rem;
 }
 
-.price .contact {
+.contact {
   background: #EFEFEF;
 }
 
-.price .contact .contact-form {
+.contact .contact-form {
   background: white;
 }
 
@@ -800,4 +794,106 @@ p {
 .btn-scroll .fas {
   color: white;
   font-size: 3.6rem;
+}
+
+.drawer {
+  position: relative;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+
+.drawer__toggler {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5%;
+}
+
+.drawer__closer {
+  content: '';
+  width: 100%;
+  height: 110vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .drawer__list {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background: white;
+    z-index: 999;
+    width: 50%;
+    height: 120vh;
+    transition: all 0.3s ease 0s;
+  }
+  .drawer__item {
+    border-bottom: 1px solid #333;
+    line-height: 16px;
+    padding: 2rem;
+  }
+  .drawer__link {
+    color: #333;
+  }
+  .drawer__toggler {
+    display: block;
+  }
+  .drawer .header-logo {
+    margin: 0 auto;
+  }
+}
+
+.d-checked .drawer__toggler {
+  position: fixed;
+  right: 51%;
+  top: 5%;
+}
+
+.d-checked .drawer__list {
+  right: 0;
+}
+
+.d-checked .drawer__closer {
+  display: block;
+}
+
+.toggler {
+  background: transparent;
+  cursor: pointer;
+}
+
+.toggler__bar {
+  display: block;
+  content: '';
+  background: white;
+  width: 32px;
+  height: 4px;
+  margin-bottom: 8px;
+  transition: all 0.3s ease 0s;
+}
+
+.toggler__bar:last-child {
+  margin-bottom: 0;
+}
+
+.d-checked .toggler__bar {
+  margin-bottom: 0;
+}
+
+.d-checked .toggler__bar:first-child {
+  transform: rotate(45deg) translateY(2px);
+}
+
+.d-checked .toggler__bar:nth-child(2) {
+  display: none;
+}
+
+.d-checked .toggler__bar:last-child {
+  transform: rotate(-45deg) translateY(-3px);
 }

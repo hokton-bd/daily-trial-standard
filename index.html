@@ -13,19 +13,28 @@
 </head>
 <body>
 
-    <nav class="global-nav">
-        <div class="inner global-nav__inner">
+    <nav class="global-nav drawer" id="js-drawer">
+
+        <div id="js-drawer-closer" class="drawer__closer"></div>
+
+        <div class="toggler drawer__toggler" id="js-toggler">
+            <span class="toggler__bar"></span>
+            <span class="toggler__bar"></span>
+            <span class="toggler__bar"></span>
+        </div>
+
+        <div class="inner global-nav__inner drawer__inner">
 
             <div class="header-logo">
                 <a href="" class="top-link img-box"><img src="assets/images/logo.png" alt="logo" class="logo"></a>
             </div>
             
-            <ul class="global-nav__list global-nav-list">
-                <li class="global-nav__item list-item"><a href="#card" class="global-nav__link">card</a></li>
-                <li class="global-nav__item list-item"><a href="#news" class="global-nav__link">news</a></li>
-                <li class="global-nav__item list-item"><a href="#price" class="global-nav__link">price</a></li>
-                <li class="global-nav__item list-item"><a href="#access" class="global-nav__link">access</a></li>
-                <li class="global-nav__item list-item"><a href="#contact" class="global-nav__link">contact</a></li>
+            <ul class="global-nav__list global-nav-list drawer__list">
+                <li class="global-nav__item drawer__item list-item"><a href="#card" class="global-nav__link drawer__link">card</a></li>
+                <li class="global-nav__item drawer__item list-item"><a href="#news" class="global-nav__link drawer__link">news</a></li>
+                <li class="global-nav__item drawer__item list-item"><a href="#price" class="global-nav__link drawer__link">price</a></li>
+                <li class="global-nav__item drawer__item list-item"><a href="#access" class="global-nav__link drawer__link">access</a></li>
+                <li class="global-nav__item drawer__item list-item"><a href="#contact" class="global-nav__link drawer__link">contact</a></li>
             </ul>
 
         </div><!-- inner -->
@@ -213,22 +222,22 @@
                         <th class="bg-grey">column2</th>
                     </tr>
                     <tr>
-                        <td class="bg-grey">row1</td>
+                        <td class="bg-grey tac">row1</td>
                         <td>100円</td>
                         <td>100円</td>
                     </tr>
                     <tr>
-                        <td class="bg-grey">row2</td>
+                        <td class="bg-grey tac">row2</td>
                         <td>6000円</td>
                         <td>0円</td>
                     </tr>
                     <tr>
-                        <td class="bg-grey">row3</td>
+                        <td class="bg-grey tac">row3</td>
                         <td class="text-red">6000円<span class="desc">※今だけ半額</span></td>
                         <td>0円</td>
                     </tr>
                     <tr>
-                        <td class="bg-grey">row4</td>
+                        <td class="bg-grey tac">row4</td>
                         <td>100円</td>
                         <td>100円</td>
                     </tr>

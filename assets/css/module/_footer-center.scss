@@ -1,0 +1,9 @@
+.footer-center {
+
+    @include mq('tab') {
+
+        margin-bottom: 3.2rem;
+
+    }
+
+}

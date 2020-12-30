@@ -44,4 +44,19 @@
         padding: .7rem .5rem;
     }
 
+    @include mq('tab') {
+
+        justify-content: center;
+
+        &__item {
+   
+            &:last-child {
+                
+                margin-right: 0;
+                
+            }
+        }
+
+    }
+
 }

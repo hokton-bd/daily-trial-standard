@@ -72,3 +72,13 @@ p {
         display: block;
     }
 }
+
+@include mq('sp') {
+
+    .section-title {
+
+        font-size: 3.6rem;
+
+    }
+
+}

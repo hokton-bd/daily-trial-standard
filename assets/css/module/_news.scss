@@ -68,6 +68,7 @@
         padding: 0.8rem;
         font-weight: bold;
         border-radius: $bdr-4;
+        margin: 0 auto;
 
     }
 
@@ -87,6 +88,40 @@
             right: -16px;
             top: 50%;
             transform: translateY(-50%);
+
+        }
+
+    }
+
+    @include mq('sp') {
+
+        &__link {
+
+            display: block;
+
+        }
+
+        &__meta {
+
+            width: 100%;
+            justify-content: flex-start;
+
+        }
+        &__title {
+
+            width: 100%;
+
+        }
+
+        .btn-label {
+
+            margin: 0;
+
+        }
+
+        .date {
+
+            margin-right: 1.6rem;
 
         }
 

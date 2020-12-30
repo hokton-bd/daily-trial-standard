@@ -7,16 +7,6 @@
     padding: 1.6rem;
     margin-bottom: 2.4rem;
 
-    &:nth-child(3n) {
-
-        margin-right: 0;
-
-    }
-
-    &:nth-child(n + 4) {
-        margin-bottom: 0;
-    }
-
     &__head {
         margin-bottom: 1.6rem;
     }
@@ -33,6 +23,41 @@
 
     &__text {
         line-height: 1.35;
+    }
+
+    @include mq('pc') {
+
+        &:nth-child(3n) {
+
+            margin-right: 0;
+    
+        }
+    
+        &:nth-child(n + 4) {
+            margin-bottom: 0;
+        }
+
+    }
+
+    @include mq('tab') {
+
+        width: calc(50% - 1.2rem);
+        margin-right: 2.4rem;
+
+        &:nth-child(even) {
+
+            margin-right: 0;
+
+        }
+
+    }
+
+    @include mq('sp') {
+
+        float: none;
+        width: 100%;
+        margin-right: 0;
+
     }
 
 }

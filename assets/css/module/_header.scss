@@ -26,4 +26,37 @@
         font-weight: bold;
     }
 
+    @include mq('tab') {
+
+        .top-title {
+
+            font-size: 4.8rem;
+
+        }
+
+        .cta-btn {
+
+            padding: 1.4rem 8rem;
+            font-size: 2rem;
+
+        }
+
+    }
+
+    @include mq('sp') {
+
+        &__inner {
+
+            padding: 184px 1.6rem;
+
+        }
+
+        .top-title {
+
+            text-align: left;
+
+        }
+
+    }
+
 }

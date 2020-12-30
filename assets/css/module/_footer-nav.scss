@@ -20,4 +20,22 @@
 
     }
 
+    @include mq('tab') {
+
+        &__menu {
+
+            display: block;
+            text-align: center;
+
+        }
+
+        &__item {
+
+            margin-right: 0;
+            padding-bottom: 1.6rem;
+
+        }
+
+    }
+
 }

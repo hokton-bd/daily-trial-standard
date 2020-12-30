@@ -11,4 +11,11 @@
         margin-bottom: 1.4rem;
     }
 
+    @include mq('tab') {
+
+        text-align: center;
+
+    }
+
+
 }

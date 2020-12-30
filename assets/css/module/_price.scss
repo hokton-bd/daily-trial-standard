@@ -79,66 +79,48 @@
         font-weight: bold;
     }
 
-}
+    @include mq('tab') {
 
-.access {
+        .content {
 
-    .google-map {
-        position: relative;
-        width: 80rem;
-        height: 40rem;
-        margin: 0 auto;
+            display: block;
 
-        iframe {
-            position: absolute;
-            left: 0;
-            top: 0;
         }
 
-    }
+        &__img {
 
-    .map-desc {
+            margin: 0 auto 3.2rem;
+            width: 60%;
 
-        margin-top: 1.6rem;
-        margin-left: 20rem;
+        }
 
-    }
+        .table {
 
-    .address {
-        margin-bottom: 1.6rem;
-    }
-
-    .address-title {
-        margin-right: 7.2rem;
-    }
-
-    .access-title {
-        margin-right: 4rem;
-    }
-    
-    .see-google-map {
-        display: block;
-        background: $main;
-        border-radius: 8px;
-        color: #fff;
-        padding: 2rem 7.7rem;
-        line-height: 1;
-        margin: 0 auto;
-        width: 30.4rem;
-        position: relative;
-        margin-top: 3rem;
-
-        &::after {
-
-            @include fa('\f105');
-            color: white;
-            right: 12px;
-            font-size: 1.6rem;
+            width: 100%;
 
         }
 
     }
 
+    @include mq('sp') {
+
+        &__img {
+
+            width: 100%;
+
+        }
+
+        th {
+
+            &:first-child {
+
+                width: 10rem;
+
+            }
+
+        }
+
+    }
 
 }
 

@@ -34,7 +34,7 @@
 
 .required {
     position: relative;
-    &::after {
+    &::before {
         content: '必須';
         display: block;
         position: absolute;
@@ -250,8 +250,56 @@
 
     }
 
+    @include mq('tab') {
+
+        padding: 3.2rem;
+        width: 100%;
+
+    }
 
 
 
+}
+
+@include mq('sp') {
+
+    .form-box {
+
+        display: block;
+
+    }
+
+    .w-520 {
+        width: 100%;
+    }
+
+    .required {
+        &::before {
+
+            bottom: 0;
+            position: relative;
+            display: inline-block;
+
+        }
+    }
+
+    .contact-form {
+
+        &__radio {
+
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        &__input-radio {
+
+            +span {
+                margin-right: 0;
+            }
+
+        }
+
+    }
 
 }

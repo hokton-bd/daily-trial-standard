@@ -20,4 +20,14 @@
 
     }
 
+    @include mq('tab') {
+
+        &__upper {
+
+            display: block;
+
+        }
+
+    }
+
 }

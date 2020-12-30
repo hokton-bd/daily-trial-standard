@@ -1,5 +1,7 @@
 .access {
 
+    padding: 0 1.6rem;
+
     .google-maps {
         height: 0;
         overflow: hidden;
@@ -58,6 +60,22 @@
         &::after {   
             @include fa('\f105');
             right: 1.2rem;
+        }
+
+    }
+
+    @include mq('tab') {
+
+        .google-maps {
+
+            width: 100%;
+
+        }
+
+        &__desc {
+
+            margin-left: 0;
+
         }
 
     }

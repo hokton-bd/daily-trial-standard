@@ -6,6 +6,9 @@
     <title>デイトラ中級課題</title>
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- swiper-js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!-- my-css -->
     <link rel="stylesheet" href="assets/css/index.min.css">
     <!-- jquery cdn -->
@@ -41,8 +44,19 @@
     </nav>
 
     <header class="header">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">a</div>
+            <div class="swiper-slide">b</div>
+            <div class="swiper-slide">c</div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
 
         <div class="inner header__inner">
+
             <h1 class="top-title">一番伝えたいことを書く</h1>
             <p class="lead-message">リードリードリード</p>
             <a href="#" class="cta-btn btn">お問い合わせ</a>
@@ -400,6 +414,9 @@
     </div>
     </footer>
     
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="assets/js/script.js"></script>
 </body>
 </html>

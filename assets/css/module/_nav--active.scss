@@ -1,0 +1,29 @@
+.nav--active {
+    position: relative;
+
+    &::before {
+
+        content: '';
+        display: block;
+        position: absolute;
+        background: $red;
+        width: 100%;
+        height: 3px;
+        top: 63%;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+
+    }
+
+    &:hover {
+
+        &::before {
+
+            opacity: 1;
+
+        }
+
+    }
+
+}

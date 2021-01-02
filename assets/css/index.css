@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -18,7 +19,7 @@ html {
 }
 
 body {
-  font-family: "游ゴシック体", "sans-serif";
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 * {
@@ -57,6 +58,12 @@ p {
   background: #3F51B5;
   color: #fff;
   display: inline-block;
+  transition: all 0.3s ease 0s;
+  box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
+}
+
+.btn:hover {
+  opacity: 0.7;
 }
 
 .section-title {
@@ -64,6 +71,7 @@ p {
   text-align: center;
   position: relative;
   margin-bottom: 10.8rem;
+  font-family: "Lato", sans-serif;
 }
 
 .section-title::after {
@@ -107,6 +115,26 @@ p {
   color: #fff;
   display: block;
   text-transform: capitalize;
+  position: relative;
+  font-family: "Lato", sans-serif;
+}
+
+.global-nav__link::before {
+  transition: all 0.3s ease 0s;
+  content: '';
+  opacity: 0;
+  display: block;
+  position: absolute;
+  background: #E81919;
+  width: 100%;
+  height: 3px;
+  top: 63%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.global-nav__link:hover::before {
+  opacity: 1;
 }
 
 .global-nav__item {
@@ -116,12 +144,23 @@ p {
 
 .global-nav .header-logo {
   margin-top: 3rem;
+  transition: all 0.3s ease 0s;
+}
+
+.global-nav .header-logo:hover {
+  opacity: 0.7;
 }
 
 .global-nav .header-logo .img-box {
   display: block;
   width: 20.5rem;
   height: 4rem;
+}
+
+@media screen and (max-width: 1199px) {
+  .global-nav__link::before {
+    display: none;
+  }
 }
 
 .global-nav-list {
@@ -156,6 +195,11 @@ p {
   font-size: 2.4rem;
   border-radius: 8px;
   font-weight: bold;
+  transition: all 0.3s ease 0s;
+}
+
+.header .cta-btn:hover {
+  opacity: 0.7;
 }
 
 @media screen and (max-width: 1199px) {
@@ -193,6 +237,12 @@ p {
   margin-right: 2.4rem;
   padding: 1.6rem;
   margin-bottom: 2.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.card-item:hover {
+  opacity: 0.7;
 }
 
 .card-item__head {
@@ -272,12 +322,24 @@ p {
   background: #3F51B5;
   color: #fff;
   display: inline-block;
+  transition: all 0.3s ease 0s;
+  box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
+}
+
+.news__item:nth-child(2) .btn:hover {
+  opacity: 0.7;
 }
 
 .news__item:nth-child(3) .btn {
   background: #E81919;
   color: #fff;
   display: inline-block;
+  transition: all 0.3s ease 0s;
+  box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
+}
+
+.news__item:nth-child(3) .btn:hover {
+  opacity: 0.7;
 }
 
 .news__item:last-child {
@@ -290,8 +352,13 @@ p {
   justify-content: space-between;
 }
 
+.news__link:hover {
+  opacity: 0.7;
+}
+
 .news .date {
   margin-top: 0.9rem;
+  font-family: "Lato", sans-serif;
 }
 
 .news .label {
@@ -304,10 +371,16 @@ p {
   background: #666666;
   color: #fff;
   display: inline-block;
+  transition: all 0.3s ease 0s;
+  box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
   padding: 0.8rem;
   font-weight: bold;
   border-radius: 4px;
   margin: 0 auto;
+}
+
+.news .btn-label:hover {
+  opacity: 0.7;
 }
 
 .news .read-more {
@@ -318,6 +391,11 @@ p {
   margin: 0 auto;
   position: relative;
   line-height: 1;
+  transition: all 0.3s ease 0s;
+}
+
+.news .read-more:hover {
+  opacity: 0.7;
 }
 
 .news .read-more::after {
@@ -377,6 +455,10 @@ p {
   table-layout: fixed;
 }
 
+.price th {
+  font-family: "Lato", sans-serif;
+}
+
 .price th:first-child {
   width: 17rem;
 }
@@ -406,6 +488,7 @@ p {
 .price .tac {
   text-align: center;
   padding: 2rem 1.6rem;
+  font-family: "Lato", sans-serif;
 }
 
 .price .bg-grey {
@@ -506,11 +589,17 @@ p {
   background: #3F51B5;
   color: #fff;
   display: inline-block;
+  transition: all 0.3s ease 0s;
+  box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
   padding: 2rem 7.7rem;
   font-weight: bold;
   border-radius: 8px;
   line-height: 1;
   position: relative;
+}
+
+.access__link:hover {
+  opacity: 0.7;
 }
 
 .access__link::after {
@@ -762,6 +851,9 @@ p {
   .contact-form__input-radio + span {
     margin-right: 0;
   }
+  .contact-form__submit {
+    padding: 2rem 10rem;
+  }
 }
 
 .footer {
@@ -800,6 +892,7 @@ p {
 .footer-nav__link {
   color: white;
   font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
 }
 
 @media screen and (max-width: 1199px) {
@@ -898,6 +991,7 @@ p {
 .footer-copyright .copyright {
   color: white;
   font-size: 1.4rem;
+  font-family: "Lato", sans-serif;
 }
 
 .btn-scroll {
@@ -906,6 +1000,12 @@ p {
   position: fixed;
   right: 2%;
   bottom: 2%;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-scroll:hover {
+  opacity: 0.7;
 }
 
 .btn-scroll .fas {
@@ -1014,4 +1114,25 @@ p {
 
 .d-checked .toggler__bar:last-child {
   transform: rotate(-45deg) translateY(-3px);
+}
+
+.nav--active {
+  position: relative;
+}
+
+.nav--active::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: #E81919;
+  width: 100%;
+  height: 3px;
+  top: 63%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+.nav--active:hover::before {
+  opacity: 1;
 }

@@ -3,5 +3,11 @@
     background: $color;
     color: #fff;
     display: inline-block;
+    transition: $transition;
+    box-shadow: $box-shadow;
+
+    &:hover {
+        opacity: $opacity;
+    }
 
 }

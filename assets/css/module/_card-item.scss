@@ -6,6 +6,12 @@
     margin-right: 2.4rem;
     padding: 1.6rem;
     margin-bottom: 2.4rem;
+    cursor: pointer;
+    transition: $transition;
+    
+    &:hover {
+        opacity: $opacity;
+    }
 
     &__head {
         margin-bottom: 1.6rem;

@@ -12,6 +12,8 @@ $twitter: #55ACEE;
 $facebook: #3B5998;
 $insta: #D93177;
 
+$opacity: .7;
+
 $layout-width-inner: 1200px;
 $breakpoints: (
   "sp": "screen and (max-width: 767px)",
@@ -19,9 +21,15 @@ $breakpoints: (
   "pc": "screen and (min-width: #{$layout-width-inner})"
 );
 
-$font-family: '游ゴシック体', 'sans-serif';
-
 $bdr-8: 8px;
 $bdr-4: 4px;
 
+$box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
+
 $transition: all .3s ease 0s;
+
+//font family
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP&display=swap');
+$ff-en: 'Lato', sans-serif;
+$ff-normal: 'Noto Sans JP', sans-serif;
+

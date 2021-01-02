@@ -17,6 +17,33 @@
         color: #fff;
         display: block;
         text-transform: capitalize;
+        position: relative;
+        font-family: $ff-en;
+
+        &::before {
+            transition: $transition;
+            content: '';
+            opacity: 0;
+            display: block;
+            position: absolute;
+            background: $red;
+            width: 100%;
+            height: 3px;
+            top: 63%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &:hover {
+
+            &::before {
+
+                opacity: 1;
+        
+            }
+
+        }
+
     }
 
     &__item {
@@ -26,12 +53,29 @@
 
     .header-logo {
         margin-top: 3rem;
+        transition: $transition;
+        
+        &:hover {
+            opacity: $opacity;
+        }
 
         .img-box {
             display: block;
             width: 20.5rem;
             height: 4rem;
         }
+    }
+
+    @include mq('tab') {
+
+        &__link {
+
+            &::before {
+                display: none;
+            }
+
+        }
+
     }
 
 

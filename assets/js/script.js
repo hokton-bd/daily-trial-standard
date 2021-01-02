@@ -16,6 +16,31 @@
 
     });
 
+    const mySwiper = new Swiper('.swiper-container', {
+        loop: true,
+
+        navigation: {  //ナビゲーションのオプション（矢印ボタンの要素を指定）
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        pagination: {
+
+            el: '.swiper-pagination',
+            clickable: true,
+            type: 'bullets',
+
+        },
+
+        scrollbar: {
+
+            el: 'swiper-scrollbar',
+
+
+        }
+
+    });
+
 }());
 
 $(function(){

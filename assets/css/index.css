@@ -169,7 +169,6 @@ p {
 }
 
 .header {
-  background-image: url("../images/mainvisual.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 60rem;
@@ -1135,4 +1134,12 @@ p {
 
 .nav--active:hover::before {
   opacity: 1;
+}
+
+.swiper__inner {
+  padding-top: 184px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60rem;
+  text-align: center;
 }

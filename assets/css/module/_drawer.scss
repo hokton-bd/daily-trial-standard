@@ -45,11 +45,25 @@
             border-bottom: 1px solid $black;
             line-height: 16px;
             padding: 2rem;
+            position: relative;
+            cursor: pointer;
+
+            &::before {
+
+                position: absolute;
+                @include fa('\f054');
+                right: 10%;
+                top: 50%;
+                transform: translateY(-50%);
+                color: $black;
+
+            }
 
         }
 
         &__link {
             color: $black;
+
         }
 
         &__toggler {

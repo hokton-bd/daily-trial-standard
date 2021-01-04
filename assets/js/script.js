@@ -16,6 +16,7 @@
 
     });
 
+    //swipwer
     const mySwiper = new Swiper('.swiper-container', {
         loop: true,
 
@@ -41,9 +42,13 @@
 
     });
 
+    new WOW().init();
+
 }());
 
 $(function(){
+
+    //smooth scroll
     $('.js-link').click(function(){
       var adjust = -60;
       var speed = 400;
@@ -59,6 +64,25 @@ $(function(){
         $('body,html').animate({scrollTop:0}, 400, 'swing');
 
     });
+
+    //floating btn
+    $(window).on('scroll', function() {
+        if($(this).scrollTop() > 100) {
+            $('#js-scrollTop').fadeIn();
+        } else {
+            $('#js-scrollTop').fadeOut();
+        }
+
+
+    });
+
+    $('.global-nav__link').on('click', function() {
+
+        $('.global-nav__link').removeClass('link--active');
+        $(this).addClass('link--active');
+        return false;
+    });
+
 
 
 });

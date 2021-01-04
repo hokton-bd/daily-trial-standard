@@ -1,7 +1,28 @@
+.swiper {
+  height: 60rem;
+}
+
 .swiper__inner {
   padding-top: 184px;
   background-size: cover;
   background-repeat: no-repeat;
   height: 60rem;
   text-align: center;
+}
+
+.swiper-button-prev {
+  left: calc(50% - 600px);
+  background: white;
+  height: 4rem;
+  width: 4rem;
+}
+
+.swiper-button-prev::after {
+  content: '\f053';
+  background: transparent;
+}
+
+.swiper-button-next {
+  right: 0;
+  right: calc(50% - 600px);
 }

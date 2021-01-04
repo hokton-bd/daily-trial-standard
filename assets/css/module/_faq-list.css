@@ -1,0 +1,8 @@
+.faq-list {
+  width: 90rem;
+  margin: 0 auto;
+}
+
+.faq-list__item {
+  margin-bottom: 2.4rem;
+}

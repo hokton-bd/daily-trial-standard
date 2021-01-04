@@ -142,6 +142,10 @@ p {
   line-height: 100px;
 }
 
+.global-nav__item:last-child {
+  padding-right: 0;
+}
+
 .global-nav .header-logo {
   margin-top: 3rem;
   transition: all 0.3s ease 0s;
@@ -163,6 +167,14 @@ p {
   }
 }
 
+.link--active {
+  transition: all 0.3s ease 0s;
+}
+
+.link--active::before {
+  opacity: 1;
+}
+
 .global-nav-list {
   display: flex;
   justify-content: space-between;
@@ -171,7 +183,6 @@ p {
 .header {
   background-size: cover;
   background-repeat: no-repeat;
-  height: 60rem;
 }
 
 .header__inner {
@@ -1001,6 +1012,7 @@ p {
   bottom: 2%;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+  display: none;
 }
 
 .btn-scroll:hover {
@@ -1053,6 +1065,19 @@ p {
     border-bottom: 1px solid #333;
     line-height: 16px;
     padding: 2rem;
+    position: relative;
+    cursor: pointer;
+  }
+  .drawer__item::before {
+    position: absolute;
+    content: "";
+    position: absolute;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: bold;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
   }
   .drawer__link {
     color: #333;
@@ -1136,10 +1161,119 @@ p {
   opacity: 1;
 }
 
+.swiper {
+  height: 60rem;
+}
+
 .swiper__inner {
   padding-top: 184px;
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
   background-size: cover;
   background-repeat: no-repeat;
   height: 60rem;
   text-align: center;
+}
+
+.swiper-button-prev {
+  left: calc(50% - 600px);
+  background: white;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+}
+
+.swiper-button-prev::after {
+  content: "";
+  position: absolute;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: bold;
+  color: #707070;
+  font-size: 2rem;
+}
+
+.swiper-button-next {
+  right: calc(50% - 600px);
+  background: white;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+}
+
+.swiper-button-next::after {
+  content: "";
+  position: absolute;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: bold;
+  color: #707070;
+  font-size: 2rem;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+}
+
+.faq-list {
+  width: 90rem;
+  margin: 0 auto;
+}
+
+.faq-list__item {
+  margin-bottom: 2.4rem;
+}
+
+.faq-content__question {
+  background: #3F51B5;
+  color: white;
+  padding: 1.2rem 2rem;
+  position: relative;
+}
+
+.faq-content__question .q {
+  margin-right: 2.5rem;
+  color: white;
+}
+
+.faq-content__question::before {
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 12px;
+  background: white;
+  right: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.faq-content__question::after {
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 2px;
+  background: white;
+  right: 2.5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.faq-content__answer {
+  background: white;
+  border: 1px solid #3F51B5;
+  border-top: none;
+  padding: 1.6rem 3rem 1.6rem 2rem;
+  color: #3F51B5;
+  line-height: 1.5;
+  display: flex;
+  display: none;
+}
+
+.faq-content__answer span {
+  display: block;
+}
+
+.faq-content__answer .a {
+  margin-right: 2.5rem;
+  color: #3F51B5;
+  display: block;
 }

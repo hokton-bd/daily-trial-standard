@@ -1,0 +1,11 @@
+.swiper-nav {
+  position: relative;
+}
+
+.swiper-nav--next {
+  right: 0;
+}
+
+.swiper-nav--left {
+  left: 0;
+}

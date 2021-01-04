@@ -1,9 +1,12 @@
 .swiper {
+    height: 60rem;
 
 
     &__inner {
 
         padding-top: 184px;
+        padding-right: 1.6rem;
+        padding-left: 1.6rem;
         background-size: cover;
         background-repeat: no-repeat;
         height: 60rem;
@@ -11,4 +14,41 @@
 
     }
 
+    &-button-prev {
+
+        left: calc(50% - 600px);
+        background: white;
+        border-radius: 50%;
+        height: 4rem;
+        width: 4rem;
+
+        &::after {
+            @include fa('\f053');
+            color: $grey;
+            font-size: 2rem;
+        }
+
+    }
+
+    &-button-next {
+
+        right: calc(50% - 600px);
+        background: white;
+        border-radius: 50%;
+        height: 4rem;
+        width: 4rem;
+
+        &::after {
+            @include fa('\f054');
+            color: $grey;
+            font-size: 2rem;
+        }
+
+    }
+
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
 }

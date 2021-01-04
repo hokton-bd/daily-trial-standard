@@ -1,0 +1,9 @@
+@mixin link-active() {
+    
+    transition: $transition;
+
+    &::before {
+        opacity: 1;
+    }
+    
+}

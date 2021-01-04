@@ -49,6 +49,11 @@
     &__item {
         padding-right: 4rem;
         line-height: 100px;
+
+        &:last-child {
+            padding-right: 0;
+        }
+
     }
 
     .header-logo {
@@ -78,5 +83,11 @@
 
     }
 
+
+}
+
+.link--active {
+
+    @include link-active();
 
 }

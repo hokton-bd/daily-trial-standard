@@ -1,0 +1,65 @@
+.faq-content {
+
+    &__question {
+
+        background: $main;
+        color: white;
+        padding: 1.2rem 2rem;
+        position: relative;
+
+        .q {
+            margin-right: 2.5rem;
+            color: white;
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 2px;
+            height: 12px;
+            background: white;
+            right: 3%;
+            top: 50%;
+            transform: translateY(-50%);
+
+        }
+
+        &::after {
+
+            position: absolute;
+            content: '';
+            width: 12px;
+            height: 2px;
+            background: white;
+            right: 2.5%;
+            top: 50%;
+            transform: translateY(-50%);
+
+        }
+
+    }
+
+    &__answer {
+
+        background: white;
+        border: 1px solid $main;
+        border-top: none;
+        padding: 1.6rem 3rem 1.6rem 2rem;
+        color: $main;
+        line-height: 1.5;
+        display: flex;
+        display: none;
+
+        span {
+            display: block;
+        }
+
+        .a {
+            margin-right: 2.5rem;
+            color: $main;
+            display: block;
+        }
+
+    }
+
+}

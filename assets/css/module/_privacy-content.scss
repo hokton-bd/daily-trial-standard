@@ -1,0 +1,27 @@
+.privacy-content {
+    margin-bottom: 4rem;
+
+    &__title {
+
+        color: $grey;
+        margin-bottom: 1.6rem;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            width: 4px;
+            height: 20px;
+            content: '';
+            background: $main;
+            display: block;
+            left: -20px;
+        }
+
+    }
+
+    &__text {
+        line-height: 1.5;
+        color: $grey;
+    }
+
+}

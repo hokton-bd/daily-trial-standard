@@ -1,0 +1,69 @@
+.modal {
+
+    position: fixed;
+    top: 50%;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transform: translateY(-50%);
+    display: none;
+
+    .section-title {
+        color: $grey;
+        font-size: 2.4rem;
+        margin-bottom: 6.4rem;
+
+        &::after {
+
+            width: 10rem;
+            height: 1px;
+
+        }
+
+    }
+
+    &__bg {
+
+        background: rgba(0, 0, 0, .3);
+        height: 100vh;
+        width: 100vw;
+        z-index: 100;
+
+    }
+
+    &__content {
+
+        position: relative;
+        width: 70%;
+        background: white;
+        height: 652px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+        padding: 3rem;
+
+    }
+
+    &__close {
+
+        background: $main;
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+
+        .fas {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+    }
+
+}

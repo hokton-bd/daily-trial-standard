@@ -83,6 +83,27 @@ $(function(){
         return false;
     });
 
+    $('.js-accordion').on('click', function() {
+        let $answer = $(this).children('.js-answer');
 
+        $(this).toggleClass('faq-active');
+        $($answer).slideToggle();
+
+    });
+
+    $('.js-modal-opener').on('click', function() {
+
+        $('.js-modal').fadeIn();
+        return false;
+
+    });
+
+    $('.js-modal-close').on('click', function() {
+
+        $('.js-modal').fadeOut();
+        return false;
+
+    });
+    
 
 });

@@ -1,6 +1,10 @@
 .swiper {
     height: 60rem;
 
+    &-container {
+        z-index: 0;
+    }
+
 
     &__inner {
 

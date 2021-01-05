@@ -1,4 +1,5 @@
 .faq-content {
+    position: relative;
 
     &__question {
 
@@ -21,6 +22,8 @@
             right: 3%;
             top: 50%;
             transform: translateY(-50%);
+            transform-origin: center;
+            transition: $transition;
 
         }
 
@@ -34,6 +37,7 @@
             right: 2.5%;
             top: 50%;
             transform: translateY(-50%);
+            transition: $transition;
 
         }
 
@@ -47,8 +51,8 @@
         padding: 1.6rem 3rem 1.6rem 2rem;
         color: $main;
         line-height: 1.5;
-        display: flex;
         display: none;
+        position: relative;
 
         span {
             display: block;
@@ -58,6 +62,26 @@
             margin-right: 2.5rem;
             color: $main;
             display: block;
+        }
+
+    }
+
+}
+
+.faq-active {
+
+    .faq-content {
+
+        &__question {
+
+            &::before {
+
+                transform: rotate(-90deg);
+                right: 3%;
+                top: 36%;
+
+            }
+
         }
 
     }

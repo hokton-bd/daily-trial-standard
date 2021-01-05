@@ -1165,6 +1165,10 @@ p {
   height: 60rem;
 }
 
+.swiper-container {
+  z-index: 0;
+}
+
 .swiper__inner {
   padding-top: 184px;
   padding-right: 1.6rem;
@@ -1223,6 +1227,10 @@ p {
   margin-bottom: 2.4rem;
 }
 
+.faq-content {
+  position: relative;
+}
+
 .faq-content__question {
   background: #3F51B5;
   color: white;
@@ -1244,6 +1252,8 @@ p {
   right: 3%;
   top: 50%;
   transform: translateY(-50%);
+  transform-origin: center;
+  transition: all 0.3s ease 0s;
 }
 
 .faq-content__question::after {
@@ -1255,6 +1265,7 @@ p {
   right: 2.5%;
   top: 50%;
   transform: translateY(-50%);
+  transition: all 0.3s ease 0s;
 }
 
 .faq-content__answer {
@@ -1264,8 +1275,8 @@ p {
   padding: 1.6rem 3rem 1.6rem 2rem;
   color: #3F51B5;
   line-height: 1.5;
-  display: flex;
   display: none;
+  position: relative;
 }
 
 .faq-content__answer span {
@@ -1276,4 +1287,120 @@ p {
   margin-right: 2.5rem;
   color: #3F51B5;
   display: block;
+}
+
+.faq-active .faq-content__question::before {
+  transform: rotate(-90deg);
+  right: 3%;
+  top: 36%;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.modal .section-title {
+  color: #707070;
+  font-size: 2.4rem;
+  margin-bottom: 6.4rem;
+}
+
+.modal .section-title::after {
+  width: 10rem;
+  height: 1px;
+}
+
+.modal__bg {
+  background: rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+}
+
+.modal__content {
+  position: relative;
+  width: 70%;
+  background: white;
+  height: 652px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  padding: 3rem;
+}
+
+.modal__close {
+  background: #3F51B5;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+}
+
+.modal__close .fas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.privacy-content {
+  margin-bottom: 4rem;
+}
+
+.privacy-content__title {
+  color: #707070;
+  margin-bottom: 1.6rem;
+  position: relative;
+}
+
+.privacy-content__title::before {
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  content: '';
+  background: #3F51B5;
+  display: block;
+  left: -20px;
+}
+
+.privacy-content__text {
+  line-height: 1.5;
+  color: #707070;
+}
+
+.modal-btn {
+  background: #3F51B5;
+  color: #fff;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
+  padding: 1.6rem 6.4rem;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 2rem;
+  line-height: 1;
+  width: 17.6rem;
+  height: 4.8rem;
+}
+
+.modal-btn:hover {
+  opacity: 0.7;
+}
+
+.privacy-content-wrapper {
+  overflow: scroll;
+  height: 68%;
+  padding: 3rem;
 }
